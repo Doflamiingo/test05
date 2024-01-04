@@ -20,7 +20,7 @@ const Work = () => {
     "../08. NXRAH/nxrah-5.jpg",
     "../09. ROAD TO RICHES/road-to-riches-2.jpg",
     "../10. SILHOUETTE/silhouette-1.jpg",
-    "../11. SELF PORTRAIT/P1085072.jpg",
+    "../11. SELF PORTRAIT/Cover-section-autoportrait.jpg",
   ];
 
   const links = [
