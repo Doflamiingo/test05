@@ -12,17 +12,20 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
+    const pages = ['/', '/about', '/work', '/testimonials', '/contact'];
+    const scrollPages = ['/', '/about', ]; // List of pages where scroll change is allowed
+  
     const handleScroll = (e) => {
       const currentIndex = pages.indexOf(router.pathname);
       let nextIndex;
-    
+  
       // Get the current page element
       const currentPageElement = document.documentElement || document.body; // This should be the element that you're scrolling
-    
+  
       // Check if the user is at the top or the bottom of the page
       const isAtTop = currentPageElement.scrollTop === 0;
       const isAtBottom = currentPageElement.scrollHeight - currentPageElement.scrollTop === currentPageElement.clientHeight;
-    
+  
       if (e.deltaY > 0 && isAtBottom) {
         // Scrolling down and user is at the bottom of the page
         nextIndex = Math.min(currentIndex + 1, pages.length - 1);
@@ -33,17 +36,21 @@ function MyApp({ Component, pageProps }) {
         // User is not at the top or bottom of the page, so we don't change the page
         return;
       }
-    
+  
+      // If the current page is not in the list of scrollPages, do nothing and return
+      if (!scrollPages.includes(router.pathname)) {
+        return;
+      }
+  
       router.push(pages[nextIndex]);
     };
-    
+  
     window.addEventListener("wheel", handleScroll);
-    
+  
     return () => {
       window.removeEventListener("wheel", handleScroll);
     };
   }, [router]);
-
   return (
     <Layout>
       <Component {...pageProps} />

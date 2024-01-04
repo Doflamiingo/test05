@@ -52,6 +52,7 @@ const Work = () => {
   ];
 
   return (
+    <div className="work-page">
     <div className="scrollable-page bg-bgabove w-full h-full bg-local bg-cover bg-center ">
       <h3 className="flex justify-center items-center text-4xl font-nomark mt-5">
     
@@ -62,7 +63,7 @@ const Work = () => {
         .scrollable-page {
           overflow: auto;
           height: 100vh; // Set the height to 100vh
-          max-height: 100vh;
+         
         }
         /* Styles pour le conteneur d'image */
         .image-container {
@@ -140,6 +141,7 @@ const Work = () => {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };
