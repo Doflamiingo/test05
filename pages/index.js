@@ -28,7 +28,7 @@ const Home = () => {
               initial="hidden"
               animate="visible"
               exit="hidden"
-              className="font-nomark xl:text-9xl text-5xl"
+              className="font-nomark xl:text-9xl text-5xl text-white "
             >
               Projets
             </motion.div>

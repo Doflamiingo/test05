@@ -61,6 +61,7 @@ const Work = () => {
         /* Styles pour la page scrollable */
         .scrollable-page {
           overflow: auto;
+          height: 100vh; // Set the height to 100vh
           max-height: 100vh;
         }
         /* Styles pour le conteneur d'image */
