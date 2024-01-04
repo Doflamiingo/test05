@@ -88,7 +88,7 @@ l&apos;essence du projet présenté.
           initial="hidden"
           animate="visible"
           exit="hidden"
-          className="bg-gray-700 hover:bg-gray-600 text-white mt-5 py-2.5 px-5 rounded-full xl-text-2xl "
+          className="bg-gray-700 hover:bg-gray-600 text-white mt-5 py-2.5 px-5 rounded-full xl-text-2xl sm:mb-36"
         >
           Mes projets
         </motion.button>
