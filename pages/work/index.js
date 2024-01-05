@@ -119,7 +119,7 @@ const Work = () => {
       `}</style>
 
       <div className="flex item-center justify-center mb-24 xl:mb-0">
-        <div className="grid grid-cols-2 grid-rows-3 gap-x-5 xl:gap-y-20 sm:gap-y-5 mt-2 px-3 mb-10">
+        <div className="grid lg:grid-cols-2 grid-rows-3 gap-x-5 xl:gap-y-20 sm:gap-y-5 sm:grid-cols-1 mt-2 px-3 mb-10">
           {images.map((imageSrc, index) => (
             <div key={index} className="image-container">
               <a href={links[index]} rel="noopener noreferrer">
