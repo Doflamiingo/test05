@@ -106,7 +106,7 @@ l&apos;essence du projet présenté.
             width={300}
             height={300}
             alt=""
-            className="max-lg:hidden"
+            className="max-lg:hidden xl:w-700 xl:h-700"
           />
         </motion.div>
         <motion.div
@@ -121,7 +121,8 @@ l&apos;essence du projet présenté.
             width={300}
             height={300}
             alt=""
-            className="max-lg:hidden"
+            className="max-lg:hidden xl:w-700 xl:h-700"
+            
           />
         </motion.div>
       </div>
