@@ -6,7 +6,7 @@ const self = () => {
  
 
   return (
-    <div className="scrollable-page bg-bgabove w-full h-full bg-local bg-cover bg-center">
+    <div className="scrollable-page bg-cj w-full h-full bg-local bg-cover bg-center">
       <h3 className="flex justify-center items-center text-4xl font-nomark mt-5">
         SELF PORTRAIT
       </h3>
@@ -44,42 +44,43 @@ const self = () => {
             />
           </div> <div>
           <img
-             src="../11. SELF PORTRAIT/P1085197.jpg"
+             src="../11. SELF PORTRAIT/P1085270.jpg"
               alt="Image 1"
               className="xl:h-[500px] xl:w-[500px]"
             />
           </div> 
           <div>
           <img
-             src="../11. SELF PORTRAIT/P1163618.jpg"
+              src="../11. SELF PORTRAIT/P1163618.png"
               alt="Image 1"
               className="xl:h-[500px] xl:w-[500px]"
             />
           </div>
           <div>
           <img
-           src="../11. SELF PORTRAIT/P1163625NB.jpg"
+           src="../11. SELF PORTRAIT/P1163625NB.png"
               alt="Image 1"
               className="xl:h-[500px] xl:w-[500px]"
             />
           </div>
           <div>
           <img
-           src="../11. SELF PORTRAIT/P1163626.jpg"
+           src="../11. SELF PORTRAIT/P1163626.png"
               alt="Image 1"
               className="xl:h-[500px] xl:w-[500px]"
             />
           </div>
-          <div>
-          <img
-             src="../11. SELF PORTRAIT/P1163642.jpg"
-              alt="Image 1"
-              className="xl:h-[500px] xl:w-[500px]"
-            />
-          </div>
+         
         </div>
+       
       </div>
-
+      <div className="flex item-center justify-center"  >
+          <img
+             src="../11. SELF PORTRAIT/P1163642.png"
+              alt="Image 1"
+              className="xl:h-[500px] xl:w-[500px]"
+            />
+          </div>
     </div>
   );
 };
